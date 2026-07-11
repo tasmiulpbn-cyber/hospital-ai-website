@@ -1,3 +1,4 @@
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Doctors from "./components/Doctors";
 import Services from "./components/Services";
@@ -21,7 +22,7 @@ function App() {
       <About />
       <Services />
       <Doctors />
-
+      <Contact />
       <p>Welcome to our AI-powered Hospital.</p>
       <Footer />
     </div>
