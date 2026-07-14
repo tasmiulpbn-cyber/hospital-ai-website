@@ -7,6 +7,22 @@ function Contact() {
   const [message, setMessage] = useState("");
 const handleSubmit = (e) => {
   e.preventDefault();
+  if (name.trim() === "") {
+  alert("Please enter your name.");
+  return;
+}
+if (phone.trim() === "") {
+  alert("Please enter your phone number.");
+  return;
+}
+if (email.trim() === "") {
+  alert("Please enter your email address.");
+  return;
+}
+if (message.trim() === "") {
+  alert("Please enter your message.");
+  return;
+}
 
   alert("Appointment Submitted Successfully!");
 
