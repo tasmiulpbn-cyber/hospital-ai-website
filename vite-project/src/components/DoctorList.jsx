@@ -1,3 +1,4 @@
+import DoctorCard from "./DoctorCard";
 function DoctorList() {
   const doctors = [
     "Dr. Omar",
@@ -11,9 +12,14 @@ return (
     <h2>Our Doctors</h2>
 
     {doctors.map((doctor) => (
-      <h3>{doctor}</h3>
+      <DoctorCard
+        key={doctor}
+        name={doctor}
+        speciality="Cardiologist"
+        experience="10 Years Experience"
+      />
     ))}
- </div>
+  </div>
 );
 }
 
