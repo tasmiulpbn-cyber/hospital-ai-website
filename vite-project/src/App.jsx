@@ -1,3 +1,4 @@
+import DoctorList from "./components/DoctorList";
 import LoginStatus from "./components/LoginStatus";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -26,8 +27,11 @@ function App() {
       <Contact />
       <p>Welcome to our AI-powered Hospital.</p>
       <LoginStatus />
+      <DoctorList />
       <Footer />
+
     </div>
+
   );
 }
 
